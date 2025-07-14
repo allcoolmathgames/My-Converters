@@ -1,2 +1,4 @@
-cd "C:\Users\Hp\Desktop\Unit Converter(Final) - Copy"
-python app.py
+Flask
+pint
+requests
+gunicorn
