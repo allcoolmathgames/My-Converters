@@ -3,12 +3,12 @@
         <div class="footer-container section-container">
             <div class="footer-column brand-info">
                 <div class="footer-logo">
-                    Convertify.AI
+                    Only Converters
                 </div>
                 <p>Your go-to solution for fast, accurate, and easy unit conversions.</p>
                 <div class="contact-info">
-                    <a href="mailto:support@convertify.ai">
-                        <i class="fa-solid fa-envelope"></i> support@convertify.ai
+                    <a href="mailto:onlyconverters@gmail.com">
+                        <i class="fa-solid fa-envelope"></i> onlyconverters@gmail.com
                     </a>
                 </div>
             </div>
@@ -20,17 +20,17 @@
                     <li><a href="{{ url_for('age_converter_index') }}">Age Converter</a></li>
                     <li><a href="{{ url_for('currency_converter_page_index') }}">Currency Converter</a></li>
                     <li><a href="{{ url_for('speed_converter_index') }}">Speed Converter</a></li>
-                    <li><a href="{{ url_for('blogs_index') }}">Blogs</a></li> {# Naya Blog link add kiya gaya #}
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="{{ url_for('blogs_index') }}">Blogs</a></li>
+                    <li><a href="{{ url_for('contact_page') }}">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="{{ url_for('privacy_policy_page') }}">Privacy Policy</a></li>
+                    <li><a href="{{ url_for('terms_conditions_page') }}">Terms & Conditions</a></li>
+                    <li><a href="{{ url_for('about_us_page') }}">About Us</a></li>
                 </ul>
             </div>
 
@@ -50,10 +50,11 @@
                         <option value="/it/">Italiano (Italian)</option>
                         <option value="/ja/">日本語 (Japanese)</option>
                         <option value="/ko/">한국어 (Korean)</option>
-                        <option value="/no/">Norsk (Norwegian)</option>
                         <option value="/pl/">Polski (Polish)</option>
                         <option value="/pt/">Português (Portuguese)</option>
                         <option value="/ru/">Русский (Russian)</option>
+                        <option value="/da/">Dansk (Danish)</option>
+                        <option value="/no/">Norsk (Norwegian)</option>
                         <option value="/tr/">Türkçe (Turkish)</option>
                         <option value="/ur/">اردو (Urdu)</option>
                     </select>
@@ -64,16 +65,14 @@
         </div>
 
         <div class="footer-bottom">
-            <div class="section-container footer-bottom-content">
-                <p>&copy; <span id="currentYearConverter"></span> Convertify.AI - All Rights Reserved.</p>
+                <p>&copy; <span id="currentYearConverter"></span> Only Converters - All Rights Reserved.</p>
                 <div class="social-icons">
-                    <a href="#" aria-label="Facebook"   ><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
                 </div>
-            </div>
         </div>
     </footer>
 

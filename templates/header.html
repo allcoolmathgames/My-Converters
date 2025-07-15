@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convertify.AI - Your Ultimate Converter Hub</title>
-    <meta name="description" content="Fast, accurate, and easy-to-use online unit and age converter. Convert length, temperature, area, volume, weight, time, and calculate age instantly.">
+    <title>Only Converters - Your Ultimate Converter Hub</title> <meta name="description" content="Fast, accurate, and easy-to-use online unit and age converter. Convert length, temperature, area, volume, weight, time, and calculate age instantly.">
 
-    <link rel="alternate" hreflang="x-default" href="http://127.0.0.1:5000/" />
-    <link rel="alternate" hreflang="en" href="http://127.0.0.1:5000/en/" />
+    <link rel="alternate" hreflang="x-default" href="{{ url_for('home') }}" /> <link rel="alternate" hreflang="en" href="http://127.0.0.1:5000/en/" />
     <link rel="alternate" hreflang="ur" href="http://127.0.0.1:5000/ur/" />
     <link rel="alternate" hreflang="es" href="http://127.0.0.1:5000/es/" />
     <link rel="alternate" hreflang="ar" href="http://127.0.0.1:5000/ar/" />
@@ -18,7 +16,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     
@@ -28,10 +26,13 @@
 </head>
 <body>
     <nav>
-        <a href="{{ url_for('home') }}" class="nav-logo">Convertify.AI</a> <div class="nav-links" id="navLinks">
-            <a href="{{ url_for('home') }}" class="nav-link-item">Home</a> <a href="{{ url_for('home') }}#more-tools" class="nav-link-item">More Tools</a> <a href="{{ url_for('home') }}#how-to-use" class="nav-link-item">How to Use</a> <a href="{{ url_for('home') }}#why-choose-us" class="nav-link-item">Why Choose Us</a> </div>
+        <a href="{{ url_for('home') }}" class="nav-logo">Only Converters</a>
+        <div class="nav-links" id="navLinks">
+            <a href="{{ url_for('home') }}" class="nav-link-item">Home</a>
+            <a href="{{ url_for('home') }}#more-tools" class="nav-link-item">More Tools</a>
+            <a href="{{ url_for('about_us_page') }}" class="nav-link-item">About Us</a> <a href="{{ url_for('contact_page') }}" class="nav-link-item">Contact Us</a> </div>
         <div class="nav-toggle" id="navToggle">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
-    <main>
+    <main>  

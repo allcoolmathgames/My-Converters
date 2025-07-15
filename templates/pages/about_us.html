@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Unit Converter</title>
+    <meta name="description" content="Learn about Unit Converter. Our goal is to provide you with fast, accurate, and easy unit conversions.">
+    <meta name="keywords" content="about us, unit converter, our mission, team, history, accurate conversions, free tools">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="x-default" href="{{ url_for('about_us_page') }}"/>
+
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <main>
+        <section class="converter-section">
+            <div class="container">
+                <h1 class="converter-title" style="text-align: center;">About Us</h1>
+                <br>
+                <p class="section-description">At Unit Converter, our goal is to make unit conversions easy and fast for everyone.</p>
+                
+                <div class="about-content">
+                    <h2>Who We Are</h2>
+                    <p>We are a passionate team that believes in improving daily life through digital tools. Unit Converter started with the idea of creating a website where converting various units is not just easy, but also a pleasant experience.</p>
+
+                    <h2>Our Mission</h2>
+                    <p>Our primary mission is to provide user-friendly, fast, and absolutely accurate conversion tools. Whether you are a student, engineer, chef, or just need to convert units for your daily needs, we are here to help you. Our website covers various categories such as Length, Temperature, Weight, Currency, and much more, so you can find all types of conversions in one place.</p>
+
+                    <h2>Our Values</h2>
+                    <ul>
+                        <li><b>Accuracy:</b> We ensure the best accuracy in every conversion.</li>
+                        <li><b>Simplicity:</b> Our design is easy to use and intuitive.</li>
+                        <li><b>Speed:</b> We know that time is precious, which is why our conversions are instant.</li>
+                        <li><b>Reliability:</b> You can rely on us to get accurate results every time.</li>
+                    </ul>
+
+                    <h2>Future Journey</h2>
+                    <p>We are constantly working to improve our tools and add new features. Your feedback is valuable to us and helps us make further improvements in the future. Our journey will continue to provide you with the best online conversion experience.</p>
+
+                    <p>Thank you for using our website!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

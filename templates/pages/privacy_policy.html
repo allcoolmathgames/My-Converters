@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Unit Converter</title>
+    <meta name="description" content="Learn about our Privacy Policy. We explain how we protect your personal information and how it is used.">
+    <meta name="keywords" content="privacy policy, data protection, privacy statement, user data, cookies, personal information, unit converter privacy">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="x-default" href="{{ url_for('privacy_policy_page') }}"/>
+
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <main>
+        <section class="converter-section">
+            <div class="container">
+                <h1 class="converter-title" style="text-align: center;" >Privacy Policy</h1>
+                <br>
+                <p class="section-description">Your privacy is very important to us on our website. This Policy tells you how we collect, use, and protect your information.</p>
+                
+                <div class="privacy-content">
+                    <h2>Information Collection and Use</h2>
+                    <p>We do not collect any personal identifying information (such as name, email address) when you visit our website, except when you voluntarily provide it to us through the contact form.</p>
+                    <p>We only collect non-personal information to help us improve our services. This may include your browser type, operating system, and pages visited.</p>
+
+                    <h2>Cookies</h2>
+                    <p>Our website may use cookies to enhance your Browse experience. Cookies are small text files stored on your device. You can control cookies through your browser settings. Cookies are used only for performance tracking and remembering user preferences.</p>
+
+                    <h2>Third-Party Links</h2>
+                    <p>Our website may contain links to third-party websites. We are not responsible for the privacy policies of these websites. We advise you to always read the privacy policy of any website you visit from our site.</p>
+
+                    <h2>Data Security</h2>
+                    <p>We implement appropriate security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no transmission over the internet can be 100% secure.</p>
+
+                    <h2>Children's Privacy</h2>
+                    <p>Our services are not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+
+                    <h2>Changes to This Privacy Policy</h2>
+                    <p>We may update our Privacy Policy from time to time. When we make any changes, we will notify you with an updated date on this page. You are advised to review this page periodically.</p>
+
+                    <p>This policy was last updated on July 15, 2025.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

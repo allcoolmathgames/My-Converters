@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Unit Converter</title>
+    <meta name="description" content="Read Unit Converter's Terms & Conditions. Learn the rules and regulations for using our services.">
+    <meta name="keywords" content="terms and conditions, terms of service, legal terms, user agreement, website terms, unit converter terms">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="x-default" href="{{ url_for('terms_conditions_page') }}"/>
+
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <main>
+        <section class="converter-section">
+            <div class="container">
+                <h1 class="converter-title" style="text-align: center;">Terms & Conditions</h1>
+                <br>
+                <p class="section-description">Please read these Terms & Conditions carefully before using our website (Unit Converter). Your use of the website means that you agree to these terms and conditions.</p>
+                
+                <div class="terms-content">
+                    <h2>1. Agreement to Services</h2>
+                    <p>Unit Converter provides online tools for various unit conversions. We do not guarantee the accuracy or completeness of these tools, as calculation errors may occur. You use these tools at your own risk.</p>
+
+                    <h2>2. Use of the Website</h2>
+                    <ul>
+                        <li>You may use the website only for lawful purposes.</li>
+                        <li>You may not harm the website in any way.</li>
+                        <li>Using automated systems or software to extract data from the website (scraping) is strictly prohibited.</li>
+                    </ul>
+
+                    <h2>3. Intellectual Property Rights</h2>
+                    <p>All content on the website, including text, graphics, logos, images, and software, are the property of Unit Converter and its licensors and are protected under copyright laws. You may not copy, distribute, or modify any content without our permission.</p>
+
+                    <h2>4. Third-Party Links</h2>
+                    <p>Our website may contain links to third-party websites that are not owned or controlled by us. We are not responsible for the content, privacy policies, or practices of these websites. We advise you to always read the Terms & Conditions and Privacy Policies of any third-party website before visiting them from our site.</p>
+
+                    <h2>5. Disclaimer of Warranties</h2>
+                    <p>Our website is provided on an "as is" basis. We do not provide any warranties, whether express or implied, including implied warranties of fitness for a particular purpose or non-infringement.</p>
+
+                    <h2>6. Limitation of Liability</h2>
+                    <p>In no event shall Unit Converter, its directors, employees, or partners be liable for any damages, including direct, indirect, incidental, consequential, or punitive damages, arising from your use or inability to use the website.</p>
+
+                    <h2>7. Changes to Terms & Conditions</h2>
+                    <p>We reserve the right to modify or replace these Terms & Conditions at any time. If a substantial change occurs, we will provide you with notice (for example, by posting on the website). Your continued use of the website after changes are published will be considered acceptance of these changes.</p>
+
+                    <h2>8. Governing Law</h2>
+                    <p>These Terms & Conditions shall be governed by and construed in accordance with the laws of Pakistan, without regard to its conflict of law provisions.</p>
+
+                    <p>Last updated: July 15, 2025</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

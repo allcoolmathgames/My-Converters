@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Unit Converter</title>
+    <meta name="description" content="Have questions or feedback? Contact us for support regarding our online unit converter tool.">
+    <meta name="keywords" content="contact us, support, feedback, unit converter, online tool, help">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="x-default" href="{{ url_for('contact_page') }}"/>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <main>
+        <section class="converter-section">
+            <div class="container">
+                <h1 class="converter-title" style="text-align: center;" >Contact Us</h1>
+                <br>
+                <p class="section-description">Reach out to our team if you have any questions, want to give feedback, or are facing any issues.</p>
+                
+                <div class="contact-form-container">
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="convert-button">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info" style=" padding: 20px;">
+                    <h2 style=" padding: 5px;">Direct Contact</h2>
+                    <p style=" padding: 5px;">If you prefer not to use the form, you can also email us directly:</p>
+                    <p style=" padding: 5px;">Email: <a href="mailto:support@unitconverter.com">support@unitconverter.com</a></p>
+                    <p style=" padding: 5px;">We will try to respond to you as soon as possible.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

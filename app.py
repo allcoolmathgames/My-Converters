@@ -35,6 +35,25 @@ def home():
 
 # Base Route for each converter category (e.g., /length/, /temperature/)
 # These will serve the 'index.html' file inside each category folder.
+
+
+# Static/Informational Pages Routes
+@app.route('/contact/')
+def contact_page():
+    return render_template('pages/contact.html')
+
+@app.route('/privacy-policy/')
+def privacy_policy_page():
+    return render_template('pages/privacy_policy.html')
+
+@app.route('/terms-conditions/')
+def terms_conditions_page():
+    return render_template('pages/terms_conditions.html')
+
+@app.route('/about-us/')
+def about_us_page():
+    return render_template('pages/about_us.html')
+
 @app.route('/length/')
 def length_converter_index():
     return render_template('length/index.html')
