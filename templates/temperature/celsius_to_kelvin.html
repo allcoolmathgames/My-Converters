@@ -28,29 +28,31 @@
     <link rel="alternate" hreflang="no" href=""/>
     <link rel="alternate" hreflang="tr" href=""/>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Calculator",
-      "name": "Celsius to Kelvin Converter",
-      "description": "An online tool to convert temperature from Celsius to Kelvin quickly and accurately.",
-      "url": "https://onlyconverters.com/temperature/celsius_to_kelvin.html",
-      "potentialAction": {
-        "@type": "PerformAction",
-        "name": "Convert Celsius to Kelvin",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://onlyconverters.com/temperature/celsius_to_kelvin.html?value={value}&unit=celsius",
-          "actionPlatform": [
-            "http://schema.org/DesktopWebPlatform",
-            "http://schema.org/IOSPlatform",
-            "http://schema.org/AndroidPlatform"
-          ]
-        },
-        "queryInput": "required name=value"
-      }
-    }
-    </script>
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Converter", "SoftwareApplication"],
+  "name": "Celsius to Kelvin Converter",
+  "description": "An online tool to convert temperature from Celsius to Kelvin quickly and accurately.",
+  "url": "https://onlyconverters.com/temperature/celsius_to_kelvin.html",
+  "applicationCategory": "Utility",
+  "operatingSystem": "All",
+  "potentialAction": {
+    "@type": "PerformAction",
+    "name": "Celsius to Kelvin Converter",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://onlyconverters.com/temperature/celsius_to_kelvin.html?value={value}&unit=celsius",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/IOSPlatform",
+        "http://schema.org/AndroidPlatform"
+      ]
+    },
+    "queryInput": "required name=value"
+  }
+}
+</script>
 </head>
 <body>
 
