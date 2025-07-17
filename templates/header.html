@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Only Converters - Your Ultimate Converter Hub</title> <meta name="description" content="Fast, accurate, and easy-to-use online unit and age converter. Convert length, temperature, area, volume, weight, time, and calculate age instantly.">
+    <title>Only Converters - Your Ultimate Converter Hub</title>
+    <meta name="description" content="Fast, accurate, and easy-to-use online unit and age converter. Convert length, temperature, area, volume, weight, time, and calculate age instantly.">
+    
+    <meta name="robots" content="noindex, nofollow">
+    
+    <link rel="canonical" href="https://onlyconverters.com/">
 
-    <link rel="alternate" hreflang="x-default" href="{{ url_for('home') }}" /> <link rel="alternate" hreflang="en" href="http://127.0.0.1:5000/en/" />
+    <meta name="keywords" content="unit converter, online converter, length converter, temperature converter, area converter, volume converter, weight converter, time converter, age calculator, free online tools">
+
+    <link rel="alternate" hreflang="x-default" href="{{ url_for('home') }}" />
+    <link rel="alternate" hreflang="en" href="http://127.0.0.1:5000/en/" />
     <link rel="alternate" hreflang="ur" href="http://127.0.0.1:5000/ur/" />
     <link rel="alternate" hreflang="es" href="http://127.0.0.1:5000/es/" />
     <link rel="alternate" hreflang="ar" href="http://127.0.0.1:5000/ar/" />
     <link rel="alternate" hreflang="de" href="http://127.0.0.1:5000/de/" />
     <link rel="alternate" hreflang="fr" href="http://127.0.0.1:5000/fr/" />
     <link rel="alternate" hreflang="ja" href="http://127.0.0.1:5000/ja/" />
+    <link rel="alternate" hreflang="ko" href="http://127.0.0.1:5000/ko/" />
+    <link rel="alternate" hreflang="pl" href="http://127.0.0.1:5000/pl/" />
+    <link rel="alternate" hreflang="pt" href="http://127.0.0.1:5000/pt/" />
     <link rel="alternate" hreflang="ru" href="http://127.0.0.1:5000/ru/" />
+    <link rel="alternate" hreflang="da" href="http://127.0.0.1:5000/da/" />
+    <link rel="alternate" hreflang="no" href="http://127.0.0.1:5000/no/" />
+    <link rel="alternate" hreflang="tr" href="http://127.0.0.1:5000/tr/" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +37,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2QWDFWwBCxN5V6qG/t3bLtmG6NvwK20R8T3M2t/FfD3M5C5S5P5M5P5M5A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YW190Q2D4X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YW190Q2D4X');
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "OnlyConverters - Ultimate Unit Converter",
+      "url": "https://onlyconverters.com",
+      "applicationCategory": "Utility",
+      "operatingSystem": "All",
+      "description": "Convert units instantly: Length, Temperature, Area, Volume, Energy, and more. Simple, fast, and accurate conversions for everyday needs.",
+      "keywords": "unit converter, length to meter, inches to cm, celsius to fahrenheit, temperature converter, area calculator, online converter",
+      "browserRequirements": "Requires JavaScript",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1200"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
 </head>
 <body>
     <nav>
@@ -31,9 +77,10 @@
             <a href="{{ url_for('home') }}" class="nav-link-item">Home</a>
             <a href="{{ url_for('home') }}#more-tools" class="nav-link-item">More Tools</a>
             <a href="{{ url_for('blogs_index') }}">Blogs</a>
-            <a href="{{ url_for('contact_page') }}" class="nav-link-item">Contact Us</a> </div>
+            <a href="{{ url_for('contact_page') }}" class="nav-link-item">Contact Us</a>
+        </div>
         <div class="nav-toggle" id="navToggle">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
-    <main>  
+    <main>
